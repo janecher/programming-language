@@ -14,7 +14,52 @@
         <div class="jumbotron">
             <h1>C# ? JavaScript ? Python</h1>
         </div>
-
+        <div class="introduction">
+            <h2>What programming language are right for you?</h2>
+            <p>You have decided to became a Software Developer, congratularion!</p>
+            <p>But what language to start?!?! Take the test and know it!</p>
+        </div>
+        <div class="test">
+            <form id="test">
+                <div class="form-group">
+                  <label for="age">Age:</label>
+                  <input id="age" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="interests">What do you prefer?</label>
+                  <select class="form-control" id="interests">
+                    <option value="1">Big data sandbox</option>
+                    <option value="2">Video games</option>
+                    <option value="3">Beautiful user inteface</option>
+                    <option value="4">Interactive webpage</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="company">Favorite company:</label>
+                    <select class="form-control" id="company">
+                      <option>Google</option>
+                      <option>Facebook</option>
+                      <option>Microsoft</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="robot">Robot or human?</label>
+                    <div class="radio">
+                        <label>
+                          <input type="radio" name="robot-human" value="human" checked>
+                          Human
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="robot-human" value="robot">
+                          Robot
+                        </label>
+                      </div>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+        </div>
     </div>    
 </body>
 </html>
