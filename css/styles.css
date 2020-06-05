@@ -27,6 +27,7 @@ p.introduction {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 30px;
+  overflow: auto;
 }
 
 .panel > .panel-heading {
@@ -39,23 +40,28 @@ p.introduction {
   color: #8cd9b3;
 }
 
+.btn{
+  background-color: #ecf9f2;
+  border: 2px solid #8cd9b3;
+  margin-top: 20px;
+}
+
+.panel-title{
+  font-weight: bold;
+}
+
 .answer{
   display: none;
   font-size: 18px;
-  padding: 20px;
+}
+
+.buddy{
+  font-size: 24px;
+  font-weight: bold;
 }
 
 img{
   float: right;
   height: 100px;
   width: auto;
-}
-
-.introduction{
-  overflow: auto;
-}
-
-#hero{
-  font-size: 24px;
-  font-weight: bold;
 }

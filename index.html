@@ -16,67 +16,76 @@
         </div>
         <div class="main">
             <div class="introduction">
-                <h2>What programming language are right for you?</h2>
-                <p>You have decided to became a Software Developer, congratularion!</p>
-                <p>But what language to start?!?! Take the test and know it!</p>
-                <img src="header-image.jpg">
+                <h2>What programming language is right for you?</h2>
+                <p>You have decided to became a Software Developer, <strong class="congratulation">Congratulation!</strong></p>
+                <p>But, what language to start learning? Take the test and find out the answer!</p>
             </div>
-            <div class="test">
-                <form id="test">
-                    <div class="form-group">
-                        <label for="name">Name of your favorite character:</label>
-                        <input id="name" class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="age">Age:</label>
-                        <input id="age" class="form-control" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="interests">What do you prefer?</label>
-                        <select class="form-control" id="interests">
-                            <option value="1">Big data sandbox</option>
-                            <option value="2">Video games</option>
-                            <option value="3">Beautiful user inteface</option>
-                            <option value="4">Interactive webpage</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Favorite company:</label>
-                        <select class="form-control" id="company">
-                            <option>Google</option>
-                            <option>Facebook</option>
-                            <option>Microsoft</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="robot">Robot or human?</label>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" name="robot-human" value="human" checked>
-                            Human
-                            </label>
+            <div class="test panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Programming language test</h2>
+                </div>
+                <div class="panel-body">
+                    <form id="test">
+                        <div class="form-group">
+                            <label for="name">Name of your favorite character:</label>
+                            <input id="name" class="form-control" type="text">
                         </div>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" name="robot-human" value="robot">
-                            Robot
-                            </label>
+                        <div class="form-group">
+                            <label for="age">How old are you?</label>
+                            <input id="age" class="form-control" type="text">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="color">What is your favorite color?</label>
-                        <input id="color" class="form-control" type="color">
-                    </div>
-                    <button type="submit" class="btn">Get an answer</button>
-                </form>
+                        <div class="form-group">
+                            <label for="interests">What do you prefer?</label>
+                            <select class="form-control" id="interests">
+                                <option value="1">Big data sandbox</option>
+                                <option value="2">Video games</option>
+                                <option value="3">Beautiful user inteface</option>
+                                <option value="4">Interactive webpage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Favorite company:</label>
+                            <select class="form-control" id="company">
+                                <option>Google</option>
+                                <option>Facebook</option>
+                                <option>Microsoft</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="robot">Robot or human?</label>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="robot-human" value="human" checked>
+                                Human
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="robot-human" value="robot">
+                                Robot
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="color">What is your favorite color?</label>
+                            <input id="color" class="form-control color" type="color" value="#8cd9b3">
+                        </div>
+                        <button type="submit" class="btn border border-secondary">Get an answer</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class = "answer">
-            <h2>Hi buddy!</h2>
-            <p>This is <span id="hero"></span></p>
-            <p> I suggest you to choose <span id="answer"></span></p>
-            <p>Good luck and don't give up!</p>
-            <button id="return-to-test">Go back</button>
+        <div class="answer panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Result</h2>
+            </div>
+            <div class="panel-body">
+                <h2 class="buddy">Hi buddy!</h2>
+                <p>This is <strong><span id="hero"></span></strong> and I suggest you to choose: <strong><span id="answer"></span></strong>.</p>
+                <img src="" id="lang-img">
+                <p class="buddy">Good luck and don't give up!</p>
+                <button id="return-to-test" class="btn border border-secondary">Go back</button>
+            </div>
         </div>
     </div>    
 </body>

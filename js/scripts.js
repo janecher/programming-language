@@ -22,8 +22,8 @@ $(document).ready(function(){
       else if (interest === "4"){
         answer = "JavaScript";
       }
-      else if(company === "Microsoft" || interest === "2"){
-        answer = "C#";
+      else if(company === "Microsoft" || interest === "2" || radioAnswer === "robot"){
+        answer = "C# / C++";
       }
       else if(interest === "1" && (company === "Google" || company === "Facebook")){
         answer = "Python";
@@ -31,13 +31,14 @@ $(document).ready(function(){
       else{
         answer = "JavaScript";
       }
-
-      $("span#hero").text(name);
-      $("span#answer").text(answer);
-
-      $(".main").hide();
-      $(".answer").show();
     }
+    
+    $("span#hero").text(name);
+    $("span#answer").text(answer);
+
+    $(".main").hide();
+    $(".answer").show();
+
     event.preventDefault();
   })
 
