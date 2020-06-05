@@ -8,12 +8,13 @@ $(document).ready(function(){
     const color = $("#color").val();
     let answer;
 
-    if(!age || age < 0 || age > 150){
-      alert("Incorrect age input (your age must be between 0 and 150)");
+    if(!name){
+      alert("Please input your favorite character");
       return false;
     }
-    if(age < 20){
-      answer = "Python";
+    if(!age || age < 0 || age > 150){
+      alert("Incorrect age input (your age must be between 1 and 150)");
+      return false;
     }
     else{
       if(interest === "3"){
@@ -32,10 +33,8 @@ $(document).ready(function(){
         answer = "JavaScript";
       }
     }
-    
-    if(name){
-      $("span#hero").text("This is " + name + " and ");
-    }
+
+    $("span#hero").text(name);
     $("span#answer").text(answer);
     $(".buddy").css("color", color);
 
