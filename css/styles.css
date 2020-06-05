@@ -1,3 +1,21 @@
 h1{
   text-align: center;
 }
+
+.jumbotron{
+  background-color: #8cd9b3;
+}
+
+.answer{
+  display: none;
+}
+
+img{
+  float: right;
+  height: 100px;
+  width: auto;
+}
+
+.introduction{
+  overflow: auto;
+}

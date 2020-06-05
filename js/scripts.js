@@ -15,18 +15,35 @@ $(document).ready(function(){
     if(age < 20){
       answer = "Python";
     }
-    else if (company === "Microsoft" || interest === "2"){
-      answer = "C#";
-    }
-    else if(age >= 20 && age < 30){
-      if(interest === "1" && (company === "Google" || company === "Facebook")){
+    else{
+      if(interest === "3"){
+        answer = "HTML & CSS";
+      }
+      else if (interest === "4"){
+        answer = "JavaScript";
+      }
+      else if(company === "Microsoft" || interest === "2"){
+        answer = "C#";
+      }
+      else if(interest === "1" && (company === "Google" || company === "Facebook")){
         answer = "Python";
       }
-      else if(interest === "3" || interest === "4"){
-        answer = "JavaScript"
+      else{
+        answer = "JavaScript";
       }
+
+      $("span#hero").text(name);
+      $("span#answer").text(answer);
+
+      $(".main").hide();
+      $(".answer").show();
     }
     event.preventDefault();
   })
+
+  $("#return-to-test").click(function(){
+    $(".answer").hide();
+    $(".main").show();
+  });
 
 });
