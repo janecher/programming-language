@@ -10,21 +10,16 @@ h1{
   background-color: #8cd9b3;
 }
 
-p.introduction {
-  font-size: 14px;
+.introduction{
+  padding-bottom: 10px;
   margin-bottom: 20px;
+  margin-top: 40px;
+  padding-left: 30px;
 }
 
 .congratulation{
   font-size: 24px;
   color: #26734d;
-}
-
-.introduction{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  overflow: auto;
 }
 
 .panel > .panel-heading {
