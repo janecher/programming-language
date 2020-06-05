@@ -9,7 +9,7 @@ $(document).ready(function(){
     let answer;
 
     if(!age || age < 0 || age > 150){
-      alert("Incorrect age input");
+      alert("Incorrect age input (your age must be between 0 and 150)");
       return false;
     }
     if(age < 20){
