@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     if(!age || age < 0 || age > 150){
       alert("Incorrect age input");
-      return;
+      return false;
     }
     if(age < 20){
       answer = "Python";

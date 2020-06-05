@@ -10,16 +10,13 @@ h1{
   background-color: #8cd9b3;
 }
 
-h2.introduction {
-  font-size: 18px;
-}
-
 p.introduction {
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .congratulation{
-  font-size: 18px;
+  font-size: 24px;
   color: #26734d;
 }
 
