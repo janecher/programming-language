@@ -61,7 +61,8 @@ p.introduction {
 }
 
 img{
-  float: right;
-  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 200px;
   width: auto;
 }

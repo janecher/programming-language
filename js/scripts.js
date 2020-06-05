@@ -35,16 +35,29 @@ $(document).ready(function(){
     
     $("span#hero").text(name);
     $("span#answer").text(answer);
+    $(".buddy").css("color", color);
+
+    if(answer === "Python"){
+      $("#lang-img").attr("src","images/python.png");
+    }
+    else if(answer === "JavaScript"){
+      $("#lang-img").attr("src","images/javascript.png");
+    }
+    else if(answer === "C# / C++"){
+      $("#lang-img").attr("src","images/c_sharp.png");
+    }
+    else if(answer === "HTML & CSS"){
+      $("#lang-img").attr("src","images/html_css.png");
+    }
 
     $(".main").hide();
     $(".answer").show();
 
     event.preventDefault();
-  })
+  });
 
   $("#return-to-test").click(function(){
     $(".answer").hide();
     $(".main").show();
   });
-
 });
