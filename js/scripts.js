@@ -33,7 +33,9 @@ $(document).ready(function(){
       }
     }
     
-    $("span#hero").text(name);
+    if(name){
+      $("span#hero").text("This is " + name + " and ");
+    }
     $("span#answer").text(answer);
     $(".buddy").css("color", color);
 
@@ -57,6 +59,7 @@ $(document).ready(function(){
   });
 
   $("#return-to-test").click(function(){
+    $("form#test")[0].reset();
     $(".answer").hide();
     $(".main").show();
   });
