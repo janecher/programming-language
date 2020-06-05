@@ -10,7 +10,7 @@ Webpage, where you can take a test and find out what programming language is the
 
 ## Setup/Installation Requirements
 
-* [URL:](janecher.github.io/programming-language/index.html) janecher.github.io/programming-language/index.html
+* URL: janecher.github.io/programming-language/index.html
 * Clone/download repository (click green button "clone or download" and click downlown ZIP or use "git clone "https://github.com/janecher/programming-language.git" command in your terminal)
 * Open index.html file in the browser
 
