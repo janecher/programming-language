@@ -29,6 +29,16 @@ p.introduction {
   margin-bottom: 30px;
 }
 
+.panel > .panel-heading {
+  background-color: #ecf9f2;
+}
+
+.color{
+  width: 200px;
+  height: 50px;
+  color: #8cd9b3;
+}
+
 .answer{
   display: none;
   font-size: 18px;
