@@ -8,30 +8,20 @@ $(document).ready(function(){
     const color = $("#color").val();
     let answer;
 
-    if(!name){
-      alert("Please input your favorite character");
-      return false;
+    if(interest === "3"){
+      answer = "HTML & CSS";
     }
-    if(!age || age < 0 || age > 150){
-      alert("Incorrect age input (your age must be between 1 and 150)");
-      return false;
+    else if (interest === "4"){
+      answer = "JavaScript";
+    }
+    else if(company === "Microsoft" || interest === "2" || radioAnswer === "robot"){
+      answer = "C# / C++";
+    }
+    else if(interest === "1" && (company === "Google" || company === "Facebook")){
+      answer = "Python";
     }
     else{
-      if(interest === "3"){
-        answer = "HTML & CSS";
-      }
-      else if (interest === "4"){
-        answer = "JavaScript";
-      }
-      else if(company === "Microsoft" || interest === "2" || radioAnswer === "robot"){
-        answer = "C# / C++";
-      }
-      else if(interest === "1" && (company === "Google" || company === "Facebook")){
-        answer = "Python";
-      }
-      else{
-        answer = "JavaScript";
-      }
+      answer = "JavaScript";
     }
 
     $("span#hero").text(name);
